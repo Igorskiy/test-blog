@@ -1,1 +1,1 @@
-[DEMO LINK](https://igorskiy.github.io/test-blog/)
+[DEMO LINK](https://test-blog-alpha.now.sh/)
