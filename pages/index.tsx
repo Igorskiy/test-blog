@@ -67,22 +67,22 @@ const Index: NextPage = () => {
         <Grid container>
           {posts.map((post: Post) => (
             <Grid item xs={12} sm={6} key={post.id}>
-              <Link href="/posts/[id]" as={`/posts/${post.id}`}>
-                <Paper
-                  className={classes.paper}
-                  onClick={async () =>
-                    dispatch(setPost(await getPostFromServer(post.id)))
-                  }
-                >
-                  <a className={classes.link}>{post.title}</a>
-                  <Typography className={classes.postBody}>
-                    {post.body}
-                  </Typography>
-                  <Button
-                    onClick={() => removePost(post.id)}
-                  >{`delete`}</Button>
-                </Paper>
-              </Link>
+              <Paper
+                className={classes.paper}
+                onClick={async () =>
+                  dispatch(setPost(await getPostFromServer(post.id)))
+                }
+              >
+                <Link href="/posts/[id]" as={`/posts/${post.id}`}>
+                  <div>
+                    <a className={classes.link}>{post.title}</a>
+                    <Typography className={classes.postBody}>
+                      {post.body}
+                    </Typography>
+                  </div>
+                </Link>
+                <Button onClick={() => removePost(post.id)}>{`delete`}</Button>
+              </Paper>
             </Grid>
           ))}
         </Grid>

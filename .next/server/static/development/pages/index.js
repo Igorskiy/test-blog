@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -177,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\projects\\test-blog\\components\\Header.tsx";
+var _jsxFileName = "C:\\Users\\Igor\\Desktop\\test-blog\\components\\Header.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -281,7 +281,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.tsx");
-var _jsxFileName = "C:\\projects\\test-blog\\components\\MyLayout.tsx";
+var _jsxFileName = "C:\\Users\\Igor\\Desktop\\test-blog\\components\\MyLayout.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2034,7 +2034,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "C:\\projects\\test-blog\\pages\\index.tsx";
+var _jsxFileName = "C:\\Users\\Igor\\Desktop\\test-blog\\pages\\index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2121,44 +2121,50 @@ const Index = () => {
       lineNumber: 69
     },
     __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/posts/[id]",
-    as: `/posts/${post.id}`,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default.a, {
     className: classes.paper,
     onClick: async () => dispatch(Object(_store_actions__WEBPACK_IMPORTED_MODULE_5__["setPost"])((await Object(_api__WEBPACK_IMPORTED_MODULE_4__["getPostFromServer"])(post.id)))),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 70
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/posts/[id]",
+    as: `/posts/${post.id}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: undefined
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
     },
     __self: undefined
   }, __jsx("a", {
     className: classes.link,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 78
     },
     __self: undefined
   }, post.title), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["Typography"], {
     className: classes.postBody,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 79
     },
     __self: undefined
-  }, post.body), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["Button"], {
+  }, post.body))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["Button"], {
     onClick: () => removePost(post.id),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 84
     },
     __self: undefined
-  }, `delete`))))))));
+  }, `delete`)))))));
 };
 
 Index.getInitialProps = async ({
@@ -2259,14 +2265,14 @@ const SET_POST_TITLE = 'SET_POST_TITLE';
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\projects\test-blog\pages\index.tsx */"./pages/index.tsx");
+module.exports = __webpack_require__(/*! C:\Users\Igor\Desktop\test-blog\pages\index.tsx */"./pages/index.tsx");
 
 
 /***/ }),

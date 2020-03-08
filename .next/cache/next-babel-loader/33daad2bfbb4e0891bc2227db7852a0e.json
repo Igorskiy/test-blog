@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const SET_COMMENT_BODY = 'SET_COMMENT_BODY';\nexport const SET_COMMENT = 'SET_COMMENT';\nexport const SET_POSTS = 'SET_POSTS';\nexport const SET_POST = 'SET_POST';\nexport const SET_POST_BODY = 'SET_POST_BODY';\nexport const SET_POST_TITLE = 'SET_POST_TITLE';","map":null,"metadata":{},"sourceType":"module"}

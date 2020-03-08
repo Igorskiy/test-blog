@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { combineReducers } from 'redux';\nimport { postsReducer } from './postsReducer';\nimport { inputReducer } from './inputReducer';\nexport const reducer = combineReducers({\n  posts: postsReducer,\n  inputs: inputReducer\n});","map":null,"metadata":{},"sourceType":"module"}
