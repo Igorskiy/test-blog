@@ -61915,13 +61915,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["makeStyles"])(function (theme) {
   return Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["createStyles"])({
     postBody: {
-      display: 'box',
       margin: 'auto',
       textAlign: 'justify',
       maxHeight: '500px',
       overflow: 'hidden',
       lineClamp: 5,
-      boxOrient: 'vertical'
+      boxOrient: 'vertical',
+      display: '-webkit-box'
     },
     link: {
       display: 'block',

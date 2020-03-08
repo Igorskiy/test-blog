@@ -2048,13 +2048,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["createStyles"])({
   postBody: {
-    display: 'box',
     margin: 'auto',
     textAlign: 'justify',
     maxHeight: '500px',
     overflow: 'hidden',
     lineClamp: 5,
-    boxOrient: 'vertical'
+    boxOrient: 'vertical',
+    display: '-webkit-box'
   },
   link: {
     display: 'block',

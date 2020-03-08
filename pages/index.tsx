@@ -17,13 +17,13 @@ import { Button, Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     postBody: {
-      display: 'box',
       margin: 'auto',
       textAlign: 'justify',
       maxHeight: '500px',
       overflow: 'hidden',
       lineClamp: 5,
       boxOrient: 'vertical',
+      display: '-webkit-box',
     },
     link: {
       display: 'block',
