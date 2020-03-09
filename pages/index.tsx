@@ -56,6 +56,11 @@ const Index: NextPage = () => {
   const getPosts = async () => {
     dispatch(setPosts(await getPostsFromServer()));
   };
+
+  const getPost = async (id: number | undefined) => {
+    dispatch(setPost(await getPostFromServer(id)));
+  };
+
   const removePost = async (id: number | undefined) => {
     await removePostFromServer(id);
     getPosts();
@@ -69,9 +74,7 @@ const Index: NextPage = () => {
             <Grid item xs={12} sm={6} key={post.id}>
               <Paper
                 className={classes.paper}
-                onClick={async () =>
-                  dispatch(setPost(await getPostFromServer(post.id)))
-                }
+                onClick={async () => getPost(post.id)}
               >
                 <Link href="/posts/[id]" as={`/posts/${post.id}`}>
                   <div>
@@ -98,20 +101,3 @@ Index.getInitialProps = async ({ store }) => {
 };
 
 export default Index;
-
-/* {posts.map((post: Post) => (
-  <div key={post.id}>
-    <div>
-      <span onClick={() => removePost(post.id)}>{`delete`}</span>
-      <Link href="/posts/[id]" as={`/posts/${post.id}`}>
-        <a
-          onClick={async () =>
-            dispatch(setPost(await getPostFromServer(post.id)))
-          }
-        >
-          {post.title}
-        </a>
-      </Link>
-      {post.body}
-    </div>
-  </div> */
