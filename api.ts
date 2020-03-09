@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { setPosts } from './store/actions';
-import { Dispatch } from 'redux';
+
 export const baseURL = 'https://simple-blog-api.crew.red';
 
 export const api = axios.create({
@@ -36,9 +35,3 @@ export const getPostsFromServer = async () => {
 export const removePostFromServer = async (id: number | undefined) => {
   await api.delete(baseURL + '/posts/' + id);
 };
-
-export const test = () => (dispatch: Dispatch) =>
-  api
-    .get(baseURL + '/posts')
-    .then(({ data }) => data)
-    .then(posts => dispatch(setPosts(posts)));
