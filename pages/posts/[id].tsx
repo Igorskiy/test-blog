@@ -60,6 +60,7 @@ const PostPage: NextPage = () => {
   const classes = useStyles();
 
   const dispatch = useDispatch();
+
   const commentBody = useSelector(
     (state: RootStateOrAny) => state.inputs.commentBody,
   );
@@ -81,12 +82,7 @@ const PostPage: NextPage = () => {
   return (
     <Layout>
       <div className={classes.root}>
-        <Paper
-          className={classes.paper}
-          onClick={async () =>
-            dispatch(setPost(await getPostFromServer(post.id)))
-          }
-        >
+        <Paper className={classes.paper}>
           <Paper className={classes.post}>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
